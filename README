@@ -1,1 +1,25 @@
+# Selamlar, bugun AO Uzerinde 3. gorev nasil yapilir buna bakacagiz.
 
+Sunucu ozellikleri onemli degil, en dusuk fiyatli olan sunucuya kurabilirsiniz.
+
+
+# Sunucumuzu Guncelleyelim.
+sudo apt update -y && sudo apt upgrade -y
+
+# Tek tek yapistirin.
+curl -sL https://deb.nodesource.com/setup_20.x -o /tmp/nodesource_setup.sh
+sudo bash /tmp/nodesource_setup.sh
+sudo apt install nodejs
+
+# Devam edelim.
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm install v20.10.0
+nvm use v20.10.0
+npm install -g npm@latest
+
+# AO'yu yüklüyoruz
+npm i -g https://get_ao.g8way.io
+source ~/.bashrc
+
+ProcessID'mizi kopyaliyoruz.
