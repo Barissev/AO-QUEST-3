@@ -5,17 +5,13 @@
 ```
 sudo apt update -y && sudo apt upgrade -y
 ```
-
 # Enter the codes one-by-one.
-
 ```
 curl -sL https://deb.nodesource.com/setup_20.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 sudo apt install nodejs
 ```
-
 # Same, one-by-one.
-
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
@@ -23,13 +19,11 @@ nvm install v20.10.0
 nvm use v20.10.0
 npm install -g npm@latest
 ```
-
 # Let's Install AO
-
 ```
 npm i -g https://get_ao.g8way.io
 source ~/.bashrc
-
+```
 # Download Discord to your Server.
 
 ```
@@ -40,7 +34,6 @@ npm install discord.js ws @permaweb/aoconnect fs
 ```
 mkdir -p /root/DevChat/src/
 ```
-
 
 # You should download the Lua extension to your server and enable it for the root folder. (I am using VSCode and recommending it.)
 
@@ -80,19 +73,16 @@ ao.send({ Target = "xnkv_QpWqICyt8NpVMbfsUQciZ4wlm5DigLrfXRm8fY", Action = "Regi
 ```
 Say("Hello, this is a first test message.", ao.id) 
 ```
-
 # Open 2 more terminals.
 
 # First enter the code below:
 ```
 node /root/DevChat/src/index.js
 ```
-
 # Second enter this code:
 ```
 node /root/DevChat/src/capture.js
 ```
-
 # Lastly, broadcast this message if you can see this message both on Discord and terminal, well done!
 ```
 Say("Hello, this is a test message.", ao.id)
