@@ -1,6 +1,7 @@
 # HI, Today we will look at how to do the 3rd task on AO. Server specifications are not important, you can install it on the lowest-priced server.
 
 # Let's update the server.
+
 ```
 sudo apt update -y && sudo apt upgrade -y
 ```
